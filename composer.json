@@ -1,0 +1,29 @@
+{
+    "name": "credibility/dandb-laravel",
+    "description": "Laravel Wrapper for DandB REST API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Credibility",
+            "email": "credibility@dandb.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "credibility/dandb": "0.1.0",
+        "illuminate/support": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*",
+        "mockery/mockery": "dev-master",
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Credibility\\DandB\\": "src/"
+        }
+    }
+}
