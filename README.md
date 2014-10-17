@@ -1,4 +1,4 @@
-Dun &amp; Bradstreet Credibility Corp. Laravel Client
+Dun &amp; Bradstreet Credibility Corp. Laravel Client [UNOFFICIAL]
 =============
 [![Coverage Status](https://img.shields.io/coveralls/credibility/dandb-laravel.svg)](https://coveralls.io/r/credibility/dandb-laravel) 
 [![Build Status](https://travis-ci.org/credibility/dandb-laravel.svg)](https://travis-ci.org/credibility/dandb-laravel)
