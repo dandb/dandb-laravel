@@ -43,7 +43,7 @@ class DandBCache implements CacheableInterface {
      */
     public function put($key, $value, $minutes)
     {
-        $this->put($key, $value, $minutes);
+        $this->cache->put($key, $value, $minutes);
     }
 
     /**
