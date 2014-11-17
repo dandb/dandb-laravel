@@ -2,6 +2,7 @@
 
 use Credibility\DandB\ClientFactory;
 use Credibility\DandB\DandB;
+use Credibility\DandB\DandBCache;
 use Credibility\DandB\DandBLaravel;
 use Credibility\DandB\Requester;
 use GuzzleHttp\Client;
@@ -36,12 +37,14 @@ class DandBServiceProvider extends ServiceProvider {
 	public function register()
 	{
         $this->app->bind('dandb', function($app) {
-            $clientFactory = new ClientFactory($this->getBaseUrl(), $this->getGuzzleOpts());
-            list($clientId, $clientSecret) = $this->getClientIdAndSecret();
-            $requester = new Requester($clientFactory, $clientId, $clientSecret);
-            $dandb = new DandB($requester);
+            $baseUrl = $this->getBaseUrl();
+            $guzzleOpts = $this->getGuzzleOpts();
+            list($clientId, $clientSecret) =  $this->getClientIdAndSecret();
 
-            return new DandBLaravel($dandb, $app);
+            $laravelCache = $app->make('cache');
+            $cache = new DandBCache($laravelCache);
+
+            return DandB::getInstance($clientId, $clientSecret, $baseUrl, $guzzleOpts, $cache);
         });
 	}
 
