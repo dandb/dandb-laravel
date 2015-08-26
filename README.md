@@ -1,10 +1,10 @@
-Dun &amp; Bradstreet Credibility Corp. Laravel Client [UNOFFICIAL]
+Dun &amp; Bradstreet Emerging Business Laravel Client
 =============
 [![Coverage Status](https://img.shields.io/coveralls/credibility/dandb-laravel.svg)](https://coveralls.io/r/credibility/dandb-laravel) 
 [![Build Status](https://travis-ci.org/credibility/dandb-laravel.svg)](https://travis-ci.org/credibility/dandb-laravel)
 [![Packagist](http://img.shields.io/packagist/v/credibility/dandb-laravel.svg)](https://packagist.org/packages/credibility/dandb-laravel)
 
-Dun and Bradstreet Cedibility Corp. API Client for Laravel based on [credibility/dandb](https://github.com/credibility/dandb).
+Dun and Bradstreet Emerging Business API Client for Laravel based on [credibility/dandb](https://github.com/credibility/dandb).
 
 ## Installation
 
